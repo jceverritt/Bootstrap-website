@@ -1,0 +1,24 @@
+<script>
+    $( document ).ready(function() {
+        $("#btnLoginSubmit").click(function () {
+            $("#mainContent").load("userInfo.html");
+        });
+    });
+
+
+</script>
+
+<form>
+    <h3>Please Login Here...</h3>
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="username" class="form-control" id="username" placeholder="Username">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+
+
+    <button type="submit" id="btnLoginSubmit" class="btn btn-primary">Submit</button>
+</form>
